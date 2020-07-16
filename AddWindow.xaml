@@ -1,0 +1,33 @@
+﻿<Window x:Class="AlexSBProject.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlexSBProject"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="250" Width="500">
+    <Grid>
+        <StackPanel>
+            <TextBlock Margin="10" FontWeight="Bold">Enter Game Information</TextBlock>
+            <Label Content="Game Title:"/>
+            <TextBox Name="tbTitle" Margin="10,0,10,0"/>
+            <Label Content="Console"/>
+            <ComboBox Name="cbConsole" Margin="10,0,10,0">
+                <ComboBoxItem Content="NES" IsSelected="True"></ComboBoxItem>
+                <ComboBoxItem Content="SNES"></ComboBoxItem>
+                <ComboBoxItem Content="N64"></ComboBoxItem>
+                <ComboBoxItem Content="GCN"></ComboBoxItem>
+                <ComboBoxItem Content="Wii"></ComboBoxItem>
+            </ComboBox>
+            <Label Content="Genre"/>
+            <ComboBox Name="cbGenre" Margin="10,0,10,0">
+                <ComboBoxItem Content="Platformer" IsSelected="True"></ComboBoxItem>
+                <ComboBoxItem Content="Action"></ComboBoxItem>
+                <ComboBoxItem Content="RPG"></ComboBoxItem>
+                <ComboBoxItem Content="Strategy"></ComboBoxItem>
+                <ComboBoxItem Content="Puzzle"></ComboBoxItem>
+            </ComboBox>
+            <Button Width="200" Margin="10" Click="Button_Click">Add Game</Button>
+        </StackPanel>
+    </Grid>
+</Window>
